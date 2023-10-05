@@ -16,7 +16,7 @@ void main() {
           MoodyScreen.routeName : (_)=> MoodyScreen(),
           WorkApp.routeName : (_)=> WorkApp(),
         },
-        initialRoute:WorkApp.routeName ,
+        initialRoute:MoodyScreen.routeName ,
       ),
     ),
   );

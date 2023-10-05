@@ -16,7 +16,7 @@ class MoodyScreen extends StatefulWidget {
 }
 
 class _MoodyScreenState extends State<MoodyScreen> {
-  List<String> labels = ["", "", "", ""];
+  List<String> labels = [".", "", "", ""];
   int currentTabIndex = 0;
    String pointForSelected ="";
 

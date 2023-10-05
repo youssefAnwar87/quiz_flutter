@@ -61,26 +61,47 @@ class _HomeScreenState extends State<HomeScreen> {
     Row(
     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: [
-    CircleAvatar(
-    backgroundColor: Color(0xffE4E7EC),
-    radius: 30,
-    child: Image.asset(AppAssets.love),
+    Column(
+      children: [
+        CircleAvatar(
+        backgroundColor: Color(0xffE4E7EC),
+        radius: 30,
+        child: Image.asset(AppAssets.love),
+        ),
+        Text("Love",style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),)
+      ],
     ),
-    CircleAvatar(
-    backgroundColor: Color(0xffE4E7EC),
-    radius: 30,
-    child: Image.asset(AppAssets.Frame),
+      Column(
+      children: [
+        CircleAvatar(
+        backgroundColor: Color(0xffE4E7EC),
+        radius: 30,
+        child: Image.asset(AppAssets.Frame),
+        ),
+        Text("Cool",style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),)
+      ],
     ),
-    CircleAvatar(
-    backgroundColor: Color(0xffE4E7EC),
-    radius: 30,
-    child: Image.asset(AppAssets.smile),
+      Column(
+      children: [
+        CircleAvatar(
+        backgroundColor: Color(0xffE4E7EC),
+        radius: 30,
+        child: Image.asset(AppAssets.smile),
+        ),
+        Text("Happy",style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),)
+      ],
     ),
-    CircleAvatar(
-    backgroundColor: Color(0xffE4E7EC),
-    radius: 30,
-    child: Image.asset(AppAssets.sad),
+      Column(
+      children: [
+        CircleAvatar(
+        backgroundColor: Color(0xffE4E7EC),
+        radius: 30,
+        child: Image.asset(AppAssets.sad),
+        ),
+        Text("sad",style: TextStyle(fontSize: 14,fontWeight: FontWeight.normal),)
+      ],
     ),
+
     ],
     ),
     SizedBox(height: 12),
@@ -114,6 +135,7 @@ class _HomeScreenState extends State<HomeScreen> {
           CarouselSlider(
     items: items,
     options: CarouselOptions(
+      clipBehavior: Clip.none,
     height: 170,
     aspectRatio: 16 / 9,
     viewportFraction: 0.8,
@@ -179,48 +201,57 @@ class _HomeScreenState extends State<HomeScreen> {
     Row(
     children: [
     Expanded(
-    child: Container(
-    decoration: BoxDecoration(
-    color: Color(0xfff8f4fe),
-    borderRadius: BorderRadius.circular(20),
+      flex: 2,
+    child: SingleChildScrollView(
+      scrollDirection: Axis.horizontal, // Scroll horizontally
+
+      child: Container(
+      decoration: BoxDecoration(
+      color: Color(0xfff8f4fe),
+      borderRadius: BorderRadius.circular(20),
+      ),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      child: Row(
+      children: [
+        Image.asset(AppAssets.relaxation),
+      SizedBox(width: 20),
+      Text(
+      "relaxation",
+      style: TextStyle(
+      fontSize: 24,
+      color: Colors.black,
+      ),
+      ),
+      ],
+      ),
+      ),
     ),
-    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-    child: Row(
-    children: [
-    Tab(icon: new Image.asset(AppAssets.relaxation)),
-    SizedBox(width: 20),
-    Text(
-    "relaxation",
-    style: TextStyle(
-    fontSize: 24,
-    color: Colors.black,
     ),
-    ),
-    ],
-    ),
-    ),
-    ),
-    SizedBox(width: 2),
     Expanded(
-    child: Container(
-    decoration: BoxDecoration(
-    color: Color(0xfffbf1f9),
-    borderRadius: BorderRadius.circular(20),
-    ),
-    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-    child: Row(
-    children: [
-    Tab(icon: new Image.asset(AppAssets.medetation)),
-    SizedBox(width: 10),
-    Text(
-    "medetation",
-    style: TextStyle(
-    fontSize: 24,
-    color: Colors.black,
-    ),
-    ),
-    ],
-    ),
+      flex: 2,
+    child: SingleChildScrollView(
+      scrollDirection: Axis.horizontal, // Scroll horizontally
+
+      child: Container(
+      decoration: BoxDecoration(
+      color: Color(0xfffbf1f9),
+      borderRadius: BorderRadius.circular(20),
+      ),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      child: Row(
+      children: [
+        Image.asset(AppAssets.medetation)   ,
+        SizedBox(width: 10),
+      Text(
+      "medetation",
+      style: TextStyle(
+      fontSize: 24,
+      color: Colors.black,
+      ),
+      ),
+      ],
+      ),
+      ),
     ),
     ),
     ],
@@ -251,7 +282,6 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     ),
     ),
-      SizedBox(width: 2),
       Expanded(
         child: Container(
           decoration: BoxDecoration(

@@ -8,38 +8,38 @@ class ContainerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(10),
+      clipBehavior: Clip.none,
+      padding: EdgeInsets.all(12),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Expanded(
-            child: Text("Postive Vibes",style: TextStyle(
-              color: Color(0xff344054),
-              fontSize: 20,
-              fontWeight: FontWeight.normal
-            ),textAlign: TextAlign.start,
-            ),
+          Text("Postive Vibes",style: TextStyle(
+            color: Color(0xff344054),
+            fontSize: 20,
+            fontWeight: FontWeight.normal
+          ),textAlign: TextAlign.start,
           ),
-          Expanded(
-            child: Row(
-              children: [
-                Column(
-                  children: [
-                    Text("Boost your mood with ",style: TextStyle(
-                      fontWeight: FontWeight.normal,
-                      fontSize: 14
-                    ),),Text("postive vibes",style: TextStyle(
-                      fontWeight: FontWeight.normal,
-                      fontSize: 14,
-                    ),textAlign: TextAlign.start,
-                    ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start ,
+                children: [
+                  Text("Boost your mood with ",style: TextStyle(
+                    fontWeight: FontWeight.normal,
+                    fontSize: 14
+                  ),),
+                  Text("postive vibes",style: TextStyle(
+                    fontWeight: FontWeight.normal,
+                    fontSize: 14,
+                  ),textAlign: TextAlign.start,
+                  ),
 
-                  ],
-                ),
-                Spacer(),
-                Image.asset(AppAssets.WalkingtheDog)
-              ],
-            ),
+                ],
+              ),
+              Spacer(),
+              Image.asset(AppAssets.WalkingtheDog)
+            ],
           ),
           Expanded(
             child: Row(children: [
