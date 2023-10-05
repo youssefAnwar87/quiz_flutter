@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:quiz_flutter/screens/secondScreen/tabBar.dart';
 import 'package:quiz_flutter/utils/app_assets.dart';
 import 'package:badges/badges.dart' as badges;
 
@@ -152,18 +153,20 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
               ),
-
-
             ],
           ),
-          SizedBox(height: MediaQuery.of(context).size.height*0.05,),
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.05,
+          ),
           Padding(
             padding: const EdgeInsets.only(left: 15.0),
-            child: Text("Workout Programs",style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.bold
-            ),),
+            child: Text(
+              "Workout Programs",
+              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
           ),
+          SizedBox(height: MediaQuery.of(context).size.height*0.02,),
+          MyTabBar(),
         ],
       ),
     );

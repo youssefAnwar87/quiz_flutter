@@ -19,5 +19,8 @@ abstract class AppAssets{
   static String heart="${imagePath}heart.png";
   static String list="${imagePath}list.png";
   static String fire="${imagePath}fire.png";
+  static String morningYoga="${imagePath}morningYoga.png";
+  static String pngwing="${imagePath}pngwing1.png";
+  static String clock="${imagePath}clock.png";
 
 }
