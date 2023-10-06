@@ -22,5 +22,11 @@ abstract class AppAssets{
   static String morningYoga="${imagePath}morningYoga.png";
   static String pngwing="${imagePath}pngwing1.png";
   static String clock="${imagePath}clock.png";
+  static String purpleSquare="${imagePath}purpleSquare.png";
+  static String chat="${imagePath}chat.png";
+  static String flower="${imagePath}flower.png";
+  static String pic1="${imagePath}pic1.png";
+  static String pic2="${imagePath}pic2.png";
+  static String pic3="${imagePath}pic3.png";
 
 }

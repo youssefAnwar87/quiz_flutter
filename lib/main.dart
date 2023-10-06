@@ -4,6 +4,7 @@ import 'package:quiz_flutter/screens/firstScreen/moody_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:quiz_flutter/screens/firstScreen/provider.dart';
 import 'package:quiz_flutter/screens/secondScreen/workOutApp.dart';
+import 'package:quiz_flutter/screens/thirdScreen/News.dart';
 
 
 void main() {
@@ -15,8 +16,9 @@ void main() {
         routes: {
           MoodyScreen.routeName : (_)=> MoodyScreen(),
           WorkApp.routeName : (_)=> WorkApp(),
+          News.routeName :(_)=> News(),
         },
-        initialRoute:MoodyScreen.routeName ,
+        initialRoute:News.routeName ,
       ),
     ),
   );
