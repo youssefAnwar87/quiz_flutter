@@ -15,8 +15,8 @@ class News extends StatefulWidget {
 }
 
 class _WorkAppState extends State<News> {
-  List<String> labels = [".", "", "", ""];
-  int currentTabIndex = 0;
+  List<String> labels = ["", ".", ""];
+  int currentTabIndex = 1;
   String pointForSelected ="";
   List<Widget>tabs =[
     CalendarTab(),

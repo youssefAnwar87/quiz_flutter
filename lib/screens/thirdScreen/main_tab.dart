@@ -26,10 +26,11 @@ class _MainTabState extends State<MainTab> {
     CarouselProvider provider = Provider.of(context);
 
     return Scaffold(
+      resizeToAvoidBottomInset: false, // Prevent resizing when the keyboard appears
       backgroundColor: Colors.white,
       body: Container(
-        padding: EdgeInsets.symmetric(horizontal: 10),
-        child: Container(
+          padding: EdgeInsets.symmetric(horizontal: 10),
+
           // keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
           child: Column(
             children: [
@@ -185,7 +186,7 @@ class _MainTabState extends State<MainTab> {
             ],
           ),
         ),
-      ),
+
     );
   }
 }
