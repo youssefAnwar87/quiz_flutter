@@ -80,7 +80,7 @@ class _MoodyScreenState extends State<MoodyScreen> {
             BottomNavigationBarItem(icon: Icon(Icons.home),label : labels[0]),
             BottomNavigationBarItem(icon: ImageIcon(AssetImage(AppAssets.square)),label: labels[1]),
             BottomNavigationBarItem(icon: ImageIcon(AssetImage(AppAssets.calendar)),label: labels[2]),
-            BottomNavigationBarItem(icon:Icon(Icons.person),label: labels[3]),
+            BottomNavigationBarItem(icon:ImageIcon(AssetImage(AppAssets.user)),label: labels[3]),
           ]
       ),
 
