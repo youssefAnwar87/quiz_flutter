@@ -230,6 +230,8 @@ class _HomeScreenState extends State<HomeScreen> {
     Expanded(
       flex: 2,
     child: SingleChildScrollView(
+      scrollDirection: Axis.horizontal, // Scroll horizontally
+
       child: Container(
       decoration: BoxDecoration(
       color: Color(0xfffbf1f9),
