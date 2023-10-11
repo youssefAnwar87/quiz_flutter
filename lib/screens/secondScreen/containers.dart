@@ -25,7 +25,6 @@ class item extends StatelessWidget {
             children: [
               Container(
                   padding: EdgeInsets.all(5),
-                  width: MediaQuery.of(context).size.width*0.13,
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(10)
