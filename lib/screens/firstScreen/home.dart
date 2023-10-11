@@ -197,115 +197,122 @@ class _HomeScreenState extends State<HomeScreen> {
     ),
     ],
     ),
-    SizedBox(height: 12),
+    SizedBox(height: 15),
     Row(
     children: [
-    Expanded(
-      flex: 2,
-    child: SingleChildScrollView(
-      scrollDirection: Axis.horizontal, // Scroll horizontally
-
-      child: Container(
-      decoration: BoxDecoration(
-      color: Color(0xfff8f4fe),
-      borderRadius: BorderRadius.circular(20),
-      ),
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-      child: Row(
-      children: [
-        Image.asset(AppAssets.relaxation),
-      SizedBox(width: 20),
-      Text(
-      "relaxation",
-      style: TextStyle(
-      fontSize: 24,
-      color: Colors.black,
-      ),
-      ),
-      ],
-      ),
-      ),
-    ),
-    ),
-    Expanded(
-      flex: 2,
-    child: SingleChildScrollView(
-      scrollDirection: Axis.horizontal, // Scroll horizontally
-
-      child: Container(
-      decoration: BoxDecoration(
-      color: Color(0xfffbf1f9),
-      borderRadius: BorderRadius.circular(20),
-      ),
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-      child: Row(
-      children: [
-        Image.asset(AppAssets.medetation)   ,
-        SizedBox(width: 10),
-      Text(
-      "medetation",
-      style: TextStyle(
-      fontSize: 24,
-      color: Colors.black,
-      ),
-      ),
-      ],
-      ),
-      ),
-    ),
-    ),
-    ],
-    ),
-    SizedBox(height: 12),
-    Row(
-    children: [
-    Expanded(
-    child: Container(
-    decoration: BoxDecoration(
-    color: Color(0xfffdf9f4),
-    borderRadius: BorderRadius.circular(20),
-    ),
-    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-    child: Row(
-    children: [
-
-      Tab(icon: new Image.asset(AppAssets.breathing)),
-      SizedBox(width: 20),
-      Text(
-        "breathing",
-        style: TextStyle(
-          fontSize: 24,
-          color: Colors.black,
-        ),
-      ),
-    ],
-    ),
-    ),
-    ),
       Expanded(
+        flex: 2,
         child: Container(
           decoration: BoxDecoration(
-            color: Color(0xffeff8fe),
+            color: Color(0xfff8f4fe),
             borderRadius: BorderRadius.circular(20),
           ),
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           child: Row(
             children: [
-              Tab(icon: new Image.asset(AppAssets.yoga)),
-              SizedBox(width: 20),
-              Text(
-                "yoga",
-                style: TextStyle(
-                  fontSize: 24,
-                  color: Colors.black,
+              Expanded(flex: 1,child: Image.asset(AppAssets.relaxation))   ,
+              SizedBox(width: 10),
+              Expanded(
+                flex: 4,
+                child: Text(
+                  "relaxation",
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.black,
+                  ),
                 ),
               ),
             ],
           ),
         ),
       ),
+    SizedBox(width: 10,),
+    Expanded(
+      flex: 2,
+    child: Container(
+    decoration: BoxDecoration(
+    color: Color(0xfffbf1f9),
+    borderRadius: BorderRadius.circular(20),
+    ),
+    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+    child: Row(
+    children: [
+      Expanded(flex: 1,child: Image.asset(AppAssets.medetation))   ,
+      SizedBox(width: 10),
+    Expanded(
+      flex: 4,
+      child: Text(
+      "medetation",
+      style: TextStyle(
+      fontSize: 19,
+      color: Colors.black,
+      ),
+      ),
+    ),
     ],
     ),
+    ),
+    ),
+    ],
+    ),
+    SizedBox(height: 12),
+          Row(
+            children: [
+              Expanded(
+                flex: 2,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Color(0xfffdf9f4),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  child: Row(
+                    children: [
+                      Expanded(flex: 1,child: Image.asset(AppAssets.breathing))   ,
+                      SizedBox(width: 10),
+                      Expanded(
+                        flex: 4,
+                        child: Text(
+                          "breathing",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+              SizedBox(width: 10,),
+              Expanded(
+                flex: 2,
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Color(0xffeff8fe),
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+                  child: Row(
+                    children: [
+                      Expanded(flex: 1,child: Image.asset(AppAssets.yoga))   ,
+                      SizedBox(width: 10),
+                      Expanded(
+                        flex: 4,
+                        child: Text(
+                          "yoga",
+                          style: TextStyle(
+                            fontSize: 18,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     );
